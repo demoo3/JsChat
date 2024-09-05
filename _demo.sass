@@ -1,24 +1,25 @@
 #demo
     padding: 80px
     .chat
-        width: 470px
+        width: 460px
         height: 300px
         border-radius: 13px
-        border: 20px solid #e1d4f0
-        background-color: #e1d4f0
+        border: 20px solid #e8e7f8
+        background-color: #e8e7f8
+        margin-bottom: 35px
         .message
-            width: 430px
-            height: 200px
+            width: 420px
+            height: 210px
             border-radius: 13px
             background-color: #ffff
             padding: 10px
             .line
-                background-color: #3082e0
+                background-color: #7490f3
                 border-radius: 20px
-                width: 60px
+                width: 50px
                 h3
                     color: #ffff
-                    padding: 10px
+                    padding: 8px
         .text
             display: flex
             justify-content: center
@@ -27,8 +28,17 @@
                 border-radius: 20px
                 margin-right: 10px
             .sent
-                background-color: #3082e0
+                background-color: #7490f3
                 border-radius: 20px
                 h3
                     color: #ffff
-                    padding: 10px 20px
+                    padding: 8px 18px
+    @media screen and ( max-width: 300px )
+        .chat
+            width: 280px
+            height: 260px
+            .message
+                width: 240px
+                height: 170px
+            input
+                padding: 0px
