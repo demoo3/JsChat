@@ -40,23 +40,36 @@ a:hover {
 #demo .chat .message .end {
   margin-left: 340px;
 }
-#demo .chat #messageme, #demo .chat #messageyou {
+#demo .chat .message {
   overflow: auto;
 }
-#demo .chat .text {
+#demo .chat .message::-webkit-scrollbar {
+  width: 5px;
+}
+#demo .chat .message::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#demo .chat .message::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+#demo .chat .message::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#demo .text {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-#demo .chat .text input {
+#demo .text input {
   border-radius: 20px;
   margin-right: 10px;
 }
-#demo .chat .text .sent {
+#demo .text .sent {
   background-color: #7490f3;
   border-radius: 20px;
 }
-#demo .chat .text .sent h3 {
+#demo .text .sent h3 {
   color: white;
   padding: 8px 18px;
 }
@@ -68,9 +81,6 @@ a:hover {
   #demo .chat .message {
     width: 240px;
     height: 170px;
-  }
-  #demo .chat #messageme, #demo .chat #messageyou {
-    overflow: scroll;
   }
   #demo .chat input {
     padding: 0 0 0 10px;
